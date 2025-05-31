@@ -36,7 +36,10 @@ Edit their speed values and test to see how it looks. Drag all three animals int
 ### program :
 ### DEVELOPED BY :Mourya .G
 ### REG NO : 212224230170
-~~~
+
+## PLAYER CONTROL :
+
+```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -73,7 +76,33 @@ public class PlayerControl : MonoBehaviour
         }
     }
 }
-~~~
+```
+
+## MOVING FORWARD :
+```
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoveForward : MonoBehaviour
+{
+    public float speed=20.0f;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(Vector3.forward*Time.deltaTime*speed);
+    }
+}
+
+```
+
 ### OUTPUT :
 ![image](https://github.com/user-attachments/assets/1bd3c6c5-3268-45b3-8687-aa1133816422)
 ### RESULT :
